@@ -1,0 +1,165 @@
+react-admin-vite-antd5
+├─.DS_Store
+├─.browserslistrc
+├─.editorconfig
+├─.eslintignore
+├─.eslintrc.js
+├─.npmrc
+├─.prettierignore
+├─CNAME
+├─LICENSE.md
+├─README.md
+├─img.png
+├─package.json
+├─pnpm-lock.yaml
+├─pnpm-workspace.yaml
+├─result.txt
+├─turbo.json
+├─packages
+|    ├─utils
+|    |   ├─.eslintrc.js
+|    |   ├─index.ts
+|    |   ├─package.json
+|    |   ├─tsconfig.json
+|    |   ├─module
+|    |   |   ├─common.ts
+|    |   |   ├─contans.ts
+|    |   |   ├─index.ts
+|    |   |   └storage.ts
+|    ├─ui
+|    | ├─.eslintrc.js
+|    | ├─index.ts
+|    | ├─package.json
+|    | ├─tsconfig.json
+|    | ├─components
+|    | |     └Button.tsx
+|    ├─tsconfig
+|    |    ├─base.json
+|    |    ├─package.json
+|    |    ├─react-library.json
+|    |    └vite.json
+|    ├─store
+|    |   ├─.eslintrc.js
+|    |   ├─index.ts
+|    |   ├─package.json
+|    |   ├─tsconfig.json
+|    |   ├─module
+|    |   |   ├─index.ts
+|    |   |   ├─reducers
+|    |   |   |    ├─common.ts
+|    |   |   |    └user.ts
+|    ├─hooks
+|    |   ├─.eslintrc.js
+|    |   ├─index.ts
+|    |   ├─package.json
+|    |   ├─tsconfig.json
+|    |   ├─module
+|    |   |   ├─KeepAlive.tsx
+|    |   |   ├─context.ts
+|    |   |   └index.tsx
+|    ├─eslint-config-custom
+|    |          ├─index.js
+|    |          └package.json
+|    ├─components
+|    |     ├─.eslintrc.js
+|    |     ├─index.ts
+|    |     ├─package.json
+|    |     ├─tsconfig.json
+|    |     ├─src
+|    |     |  ├─index.ts
+|    |     |  ├─components
+|    |     |  |     ├─header.tsx
+|    |     |  |     ├─Text
+|    |     |  |     |  └index.tsx
+|    |     |  |     ├─OutletLayoutRouter
+|    |     |  |     |         └index.tsx
+|    |     |  |     ├─Layout
+|    |     |  |     |   ├─index.tsx
+|    |     |  |     |   └layout.d.ts
+├─apps
+|  ├─demo
+|  |  ├─.eslintrc.js
+|  |  ├─favicon.svg
+|  |  ├─index.html
+|  |  ├─package.json
+|  |  ├─tsconfig.json
+|  |  ├─vite.config.ts
+|  |  ├─src
+|  |  |  ├─App.tsx
+|  |  |  ├─main.css
+|  |  |  ├─main.tsx
+|  |  |  ├─typescript.svg
+|  |  |  └vite-env.d.ts
+|  |  ├─public
+|  |  |   └vite.svg
+|  ├─admin
+|  |   ├─.eslintrc.js
+|  |   ├─index.html
+|  |   ├─package.json
+|  |   ├─tsconfig.json
+|  |   ├─vite.config.ts
+|  |   ├─src
+|  |   |  ├─App.scss
+|  |   |  ├─app.tsx
+|  |   |  ├─main.css
+|  |   |  ├─main.tsx
+|  |   |  ├─react-admin.d.ts
+|  |   |  ├─routes
+|  |   |  |   └index.tsx
+|  |   |  ├─pages
+|  |   |  |   ├─user
+|  |   |  |   |  └index.tsx
+|  |   |  |   ├─systemManagement
+|  |   |  |   |        ├─userManagement
+|  |   |  |   |        |       └index.tsx
+|  |   |  |   |        ├─roleManagement
+|  |   |  |   |        |       └index.tsx
+|  |   |  |   ├─login
+|  |   |  |   |   ├─index.module.scss
+|  |   |  |   |   └index.tsx
+|  |   |  |   ├─list-page
+|  |   |  |   |     └index.tsx
+|  |   |  |   ├─error-page
+|  |   |  |   |     ├─index.module.scss
+|  |   |  |   |     └index.tsx
+|  |   |  |   ├─dashboard
+|  |   |  |   |     ├─index.tsx
+|  |   |  |   |     └style.module.scss
+|  |   |  ├─components
+|  |   |  ├─common
+|  |   |  |   ├─mock
+|  |   |  |   |  └index.tsx
+|  |   |  ├─assets
+|  |   |  |   └logo.jpg
+|  |   ├─react-admin-vite-antd5
+|  |   |           ├─index.html
+|  |   |           ├─js
+|  |   |           | ├─.pnpm-8240122a.js
+|  |   |           | ├─.pnpm-8240122a.js.gz
+|  |   |           | ├─index-0c4df523.js
+|  |   |           | ├─index-3301e66b.js
+|  |   |           | ├─index-7be869b0.js
+|  |   |           | ├─index-c091b036.js
+|  |   |           | ├─index-da98ff6c.js
+|  |   |           | └index-da98ff6c.js.gz
+|  |   |           ├─css
+|  |   |           |  └index-1e08c300.css
+|  |   ├─public
+├─.idea
+|   ├─git_toolbox_prj.xml
+|   ├─modules.xml
+|   ├─prettier.xml
+|   ├─react-ts-vite-template.iml
+|   ├─vcs.xml
+|   ├─workspace.xml
+|   ├─leetcode
+|   |    └statistics.xml
+|   ├─jsLinters
+|   ├─inspectionProfiles
+|   ├─codeStyles
+|   |     ├─Project.xml
+|   |     └codeStyleConfig.xml
+├─.husky
+|   ├─pre-commit
+|   ├─_
+|   | └husky.sh

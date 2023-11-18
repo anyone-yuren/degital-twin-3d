@@ -1,0 +1,30 @@
+{
+  "name": "degital-twin-3d",
+  "version": "0.0.0",
+  "author": {
+    "name": "anyone-yuren",
+    "url": ""
+  },
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "dev": "turbo run dev --concurrency 14",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "reinstall": "pnpm run clean && rm -rf node_modules && rm -rf pnpm-lock.yaml && pnpm run bootstrap",
+    "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
+    "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "prettier": "^2.5.1",
+    "turbo": "^1.8.3"
+  },
+  "packageManager": "pnpm@7.27.0",
+  "dependencies": {
+    "tailwind-package": "workspace:^0.0.0",
+    "threejs": "workspace:^1.0.1"
+  }
+}

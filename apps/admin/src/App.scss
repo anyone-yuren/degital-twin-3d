@@ -1,0 +1,82 @@
+.main {
+  /*text-align: center;*/
+  color: #2c3e50;
+}
+
+.main p {
+  margin: 16px 0;
+}
+.ant-pro-layout-content {
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+.dv-scroll-board {
+  .header,
+  .rows .row-item {
+    font-size: 12px !important;
+  }
+}
+.ant-list .ant-list-item .ant-list-item-action > li:last-child {
+  padding-inline-end: 0 !important;
+}
+.ant-modal-root .ant-modal-mask {
+  --tw-backdrop-blur: blur(4px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)
+    var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+//.fade-enter,
+//.fade-appear {
+//  opacity: 0;
+//}
+//.fade-enter-active,
+//.fade-appear-active {
+//  opacity: 1;
+//  //transition(opacity 0.25s red 0.25s)
+//}
+//.fade-exit {
+//  opacity: 1;
+//  z-index: 1;
+//}
+//.fade-exit-active {
+//  opacity: 0;
+//  z-index: 1;
+//  //transition(opacity 0.25s red);
+//}
+//.page-fade-enter,
+//.page-fade-appear {
+//  opacity: 0;
+//}
+//.page-fade-enter-active,
+//.page-fade-appear-active {
+//  opacity: 1;
+//  //transition: opacity 0.5s red;
+//}
+//.page-fade-exit {
+//  opacity: 1;
+//  display: none !important;
+//}
+//.page-fade-exit-active {
+//  opacity: 0;
+//}
+//@keyframes keepAliveFade {
+//  0% {
+//    opacity: 0;
+//  }
+//  50% {
+//    opacity: 0;
+//  }
+//  100% {
+//    opacity: 1;
+//  }
+//}
+//.layout-container {
+//  position: absolute;
+//  left: 0;
+//  right: 0;
+//  top: 0;
+//  bottom: 0;
+//  &.keep-alive-fade {
+//    animation: keepAliveFade 0.5s ease-in-out;
+//  }
+//}

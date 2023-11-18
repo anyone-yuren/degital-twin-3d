@@ -1,0 +1,39 @@
+.panel {
+  background-color: rgba(89, 89, 89, 0.35);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0 8px;
+  // overflow: hidden;
+}
+
+.card {
+  @extend .panel;
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.15);
+  will-change: transform;
+  border-radius: 0;
+  border: none;
+}
+@keyframes borderColor1 {
+  from {
+    box-shadow: 0 0 0px rgba(50, 170, 170, 0.4);
+  }
+  to {
+    box-shadow: 0 0 0px rgba(50, 170, 170, 0.9);
+  }
+}
+
+.title {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 6px 0;
+  font-weight: bold;
+  color: white;
+  animation: borderColor1 1.5s alternate infinite ease-in-out;
+}

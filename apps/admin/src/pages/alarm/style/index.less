@@ -1,0 +1,80 @@
+.alarm-layout {  display: grid;
+    // min-height:100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: column dense;
+    grid-template-areas:
+      "left left left left center center center center right right right right"
+      "left left left left center center center center right right right right"
+      "left left left left center center center center right right right right"
+      "left left left left center center center center right right right right"
+      "left left left left center center center center right right right right"
+      "left left left left center center center center right right right right"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom"
+      "bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom bottom";
+  }
+  
+  .left { 
+    grid-area: left; 
+    background:#1a1c25;
+    border-radius: 20px;
+  }
+  
+  .center { 
+    grid-area: center; 
+    background:#1a1c25;
+    border-radius: 20px;
+  }
+  
+  .right { 
+    grid-area: right; 
+    background:#1a1c25;
+    border-radius: 20px;
+  }
+  
+  .bottom { 
+    grid-area: bottom; 
+    background:#1a1c25;
+    border-radius: 20px;
+  }
+
+  .border-b-color{
+    border-bottom:1px solid #3A3F54;
+  }
+  .row-item{
+    border-bottom:1px solid #3A3F54;
+  }
+
+  .tag-box{
+    padding:5px 16px ;
+    background:rgba(59,106,238,0.15);
+    color:#1890FF;
+  }
+  .tag-gren-box{
+    padding:5px 16px ;
+    background:rgba(0,255,210,0.1);
+    color:#00FFD2;
+  }
+  .tag-yellow-box{
+    padding:5px 16px ;
+    background: rgba(255,213,12,0.1);
+    color:#FFD50C;
+  }
+  .tag-pop-box{
+    padding:5px 16px ;
+    background: rgba(120,51,242,0.2);
+    color:#7833F2;
+  }
+
+
+ .row-item {
+    border-bottom:none !important;
+  }
+ 
+  

@@ -1,0 +1,29 @@
+#loginContainer {
+  background-color: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+
+  background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+
+  .loginTop {
+    width: 328px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    span {
+      //margin-right: 40px;
+    }
+  }
+  form {
+    width: 328px;
+  }
+}

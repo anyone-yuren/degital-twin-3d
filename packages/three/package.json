@@ -1,0 +1,40 @@
+{
+  "name": "threejs",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@jiaminghi/data-view-react": "^1.2.5",
+    "@react-spring/three": "^9.7.2",
+    "@react-three/csg": "^2.2.0",
+    "@react-three/drei": "^9.70.3",
+    "@react-three/fiber": "^8.13.0",
+    "@react-three/postprocessing": "^2.14.8",
+    "@react-three/rapier": "^1.0.1",
+    "leva": "^0.9.34",
+    "mobx-threejs-store": "workspace:^1.0.0",
+    "components": "workspace:*",
+    "react": "^18.2.0",
+    "three": "^0.153.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "less": "^4.1.3",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-router-dom": "^6.8.1"
+  }
+}

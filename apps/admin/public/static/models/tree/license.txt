@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tree For Games
+* source:	https://sketchfab.com/3d-models/tree-for-games-f91d3c3c527d47fdb217c291e4c7df4b
+* author:	Daniel Gryningstjerna (https://sketchfab.com/dangry)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tree For Games" (https://sketchfab.com/3d-models/tree-for-games-f91d3c3c527d47fdb217c291e4c7df4b) by Daniel Gryningstjerna (https://sketchfab.com/dangry) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",
+    "types": ["vite/client"]
+  },
+  "extends": "tsconfig/vite.json",
+  "include": ["src"]
+}
