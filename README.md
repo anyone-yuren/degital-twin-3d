@@ -1,4 +1,9 @@
-# degital-twin-3D
+<div align="center">
+<img src="logo.png" width="200px" alt="logo"/>
+<h1>degital-twin-3D</h1>
+</div>
+
+<img width="auto" src="canvas.gif">
 
 ## 背景介绍
 刚接触3D，前期我与大家一样，也无从下手，前段时间，在掘金社区记录与分享过自己前期对于数字孪生项目搭建与实现的一些思考，没想到还是有很多私信、留言感兴趣的小伙伴。
