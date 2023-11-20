@@ -122,7 +122,7 @@ const House = (props: IHouse) => {
   const surfaceTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/surface.jpg'
-      : `/degital-twin-3d/static/surface.png`
+      : `/degital-twin-3d/static/surface.jpg`
   );
   surfaceTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   surfaceTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
