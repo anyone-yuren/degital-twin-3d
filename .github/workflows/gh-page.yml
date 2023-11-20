@@ -1,0 +1,38 @@
+# 1. 为工作流定义名字
+name: 「GitHub Pages」Build & Deploy
+
+# 2. 触发条件修改为: 当 main 或 master 分支, 有 push 的时候, 执行任务
+on:
+  push:
+    branches:
+      - master
+      - main
+
+# 3. 创建工作流
+jobs:
+  build: # 工作流名称
+    runs-on: ubuntu-latest # 依赖环境
+
+    steps: # 工作流步骤
+      # step 1. 获取源码, 拉取仓库代码
+      - name: Chekcout 🛎️ # 步骤名
+        uses: actions/checkout@master # 使用插件 => https://github.com/actions/checkout
+
+      # step 2. 使用指定版本 node
+      - name: Use Node  📦 # 步骤名
+        uses: actions/setup-node@master # 使用插件 => https://github.com/actions/setup-node
+        with: # 插件携带参数
+          node-version: '16' # 指定 node 版本
+
+      # step 3. 安装依赖并打包
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
+
+      # step 4. 项目部署, 将打包后的产物合并到指定的分支上
+      - name: Deploy 🚀 # 步骤名
+        uses: JamesIves/github-pages-deploy-action@v4.2.2 # 使用插件 => https://github.com/JamesIves/github-pages-deploy-action
+        with:
+          BRANCH: gh-pages # 部署分支
+          FOLDER: digtal-dist # 打包, 静态资源输出的目录
