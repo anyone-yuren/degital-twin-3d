@@ -8,7 +8,7 @@ const TreeModel = ({ position, scale }) => {
     GLTFLoader,
     process.env.NODE_ENV == 'development'
       ? '/static/models/tree/scene.gltf'
-      : `${process.env.STATIC_PATH}/static/models/tree/scene.gltf`
+      : `${process.env.VITE_STATIC_PATH}/static/models/tree/scene.gltf`
   );
 
   const setShadow = (obj) => {
