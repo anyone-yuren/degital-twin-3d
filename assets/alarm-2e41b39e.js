@@ -1,0 +1,1 @@
+import{c as e}from"./index-a7e30594.js";const n=t=>e.get("/api/SystemWarning/GetSystemWarnInfoByDay",{params:t}),r=()=>e.get("/api/SystemWarning/GetCurrentWarns",{}),s=t=>e.get("/api/SystemWarning/GetSystemWarnInfoByWeek",{params:t}),m=t=>e.get("/api/SystemWarning/GetSystemWarnInfoByMonth",{params:t});export{r as G,n as a,m as b,s as c};
