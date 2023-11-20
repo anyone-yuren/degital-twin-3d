@@ -26,12 +26,22 @@ function ForkTruck(props: IFourWayCar) {
     return res.clone();
   }, []);
   const model2 = useMemo(() => {
-    const res = useLoader(FBXLoader, '/static/models/SE-2.FBX');
+    const res = useLoader(
+      FBXLoader,
+      process.env.NODE_ENV == 'development'
+        ? '/static/models/SE-2.FBX'
+        : `/degital-twin-3d/static/models/SE-2.FBX`
+    );
     res.scale.set(0.05, 0.05, 0.05);
     return res.clone();
   }, []);
   const model3 = useMemo(() => {
-    const res = useLoader(FBXLoader, '/static/models/SE-3.FBX');
+    const res = useLoader(
+      FBXLoader,
+      process.env.NODE_ENV == 'development'
+        ? '/static/models/SE-3.FBX'
+        : `/degital-twin-3d/static/models/SE-3.FBX`
+    );
     res.scale.set(0.05, 0.05, 0.05);
     return res.clone();
   }, []);
