@@ -67,7 +67,7 @@ function GoodsItem(props: IGoodsItem) {
     TextureLoader,
     process.env.NODE_ENV == 'development'
       ? '/static/goods_texture.png'
-      : `${process.env.STATIC_PATH}/static/goods_texture.png`
+      : `${process.env.REACT_STATIC_PATH}/static/goods_texture.png`
   );
 
   const goodsGeometry = useMemo(
