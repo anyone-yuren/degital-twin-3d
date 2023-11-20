@@ -24,7 +24,7 @@
   },
   "packageManager": "pnpm@7.27.0",
   "dependencies": {
-    "tailwind-package": "workspace:^0.0.0",
+    "tailwind-package": "workspace:*",
     "threejs": "workspace:^1.0.1"
   }
 }
