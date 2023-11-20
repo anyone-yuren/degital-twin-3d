@@ -71,37 +71,66 @@ const House = (props: IHouse) => {
     return shape;
   };
 
-  const texture = new THREE.TextureLoader().load('/static/wall_pic5.jpg');
+  // const texture = new THREE.TextureLoader().load('/static/wall_pic5.jpg');
+  const texture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/wall_pic5.jpg'
+      : `${process.env.STATIC_PATH}/static/wall_pic5.png`
+  );
   texture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   texture.repeat.set(0.02, 0.02);
 
-  const roofTexture = new THREE.TextureLoader().load('/static/wall_pic7.png');
+  const roofTexture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/roof.jpg'
+      : `${process.env.STATIC_PATH}/static/roof.png`
+  );
   roofTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   roofTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
   roofTexture.rotation = Math.PI / 2;
   roofTexture.repeat.set(0.005, 0.005);
 
-  const floorTexture = new THREE.TextureLoader().load('/static/floor_02.png');
+  const floorTexture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/floor.jpg'
+      : `${process.env.STATIC_PATH}/static/floor.png`
+  );
   floorTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   floorTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
   floorTexture.repeat.set(0.01, 0.01);
 
-  const roadTexture = new THREE.TextureLoader().load('/static/road2.jpg');
+  const roadTexture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/road.jpg'
+      : `${process.env.STATIC_PATH}/static/road.png`
+  );
   roadTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   roadTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
   roadTexture.repeat.set(5, 1);
 
-  const grassTexture = new THREE.TextureLoader().load('/static/grass.jpg');
+  const grassTexture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/grass.jpg'
+      : `${process.env.STATIC_PATH}/static/grass.png`
+  );
   grassTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   grassTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
   grassTexture.repeat.set(20, 1);
 
-  const surfaceTexture = new THREE.TextureLoader().load('/static/surface.jpg');
+  const surfaceTexture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/surface.jpg'
+      : `${process.env.STATIC_PATH}/static/surface.png`
+  );
   surfaceTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   surfaceTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
   surfaceTexture.repeat.set(0.01, 0.01);
 
-  const crossTexture = new THREE.TextureLoader().load('/static/cross.png');
+  const crossTexture = new THREE.TextureLoader().load(
+    process.env.NODE_ENV == 'development'
+      ? '/static/cross.jpg'
+      : `${process.env.STATIC_PATH}/static/cross.png`
+  );
   crossTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   crossTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
   crossTexture.repeat.set(70, 1);

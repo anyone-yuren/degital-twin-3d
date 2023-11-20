@@ -12,7 +12,13 @@ interface IFourWayCar {
 function FourWayCar(props: IFourWayCar) {
   const { hasGoods, position } = props;
   const model = useMemo(() => {
-    const res = useLoader(FBXLoader, '/static/models/SXC-JXB.FBX');
+    // const res = useLoader(FBXLoader, '/static/models/SXC-JXB.FBX');
+    const res = useLoader(
+      FBXLoader,
+      process.env.NODE_ENV == 'development'
+        ? '/static/models/SXC-JXB.FBX'
+        : `${process.env.STATIC_PATH}/static/models/SXC-JXB.FBX`
+    );
     const car = res.clone();
     car.scale.set(0.05, 0.06, 0.04);
     return car;

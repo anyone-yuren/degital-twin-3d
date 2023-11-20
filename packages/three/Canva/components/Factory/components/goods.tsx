@@ -62,7 +62,13 @@ interface IGoodsItem {
 function GoodsItem(props: IGoodsItem) {
   const { groupProps } = props;
 
-  const colorMap = useLoader(TextureLoader, '/static/goods_texture.png');
+  // const colorMap = useLoader(TextureLoader, '/static/goods_texture.png');
+  const colorMap = useLoader(
+    TextureLoader,
+    process.env.NODE_ENV == 'development'
+      ? '/static/goods_texture.png'
+      : `${process.env.STATIC_PATH}/static/goods_texture.png`
+  );
 
   const goodsGeometry = useMemo(
     () => new THREE.BoxGeometry(goodsSize.x, goodsSize.y, goodsSize.z),

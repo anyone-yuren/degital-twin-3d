@@ -12,7 +12,13 @@ interface IMxwCar {
 function MxwCar(props: IMxwCar) {
   const { hasGoods, position, radian } = props;
   const carModel = useMemo(() => {
-    const res = useLoader(FBXLoader, '/static/models/maixiaowei-1.FBX');
+    // const res = useLoader(FBXLoader, '/static/models/maixiaowei-1.FBX');
+    const res = useLoader(
+      FBXLoader,
+      process.env.NODE_ENV == 'development'
+        ? '/static/models/maixiaowei-1.FBX'
+        : `${process.env.STATIC_PATH}/static/models/maixiaowei-1.FBX`
+    );
     res.scale.set(0.05, 0.05, 0.05);
     return res;
   }, []);
