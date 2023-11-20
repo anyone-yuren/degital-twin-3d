@@ -12,7 +12,7 @@ import FourWayCar from './fourWayCar';
 import MxwCar from './mxwCar';
 import ForkTruck from './forkTruck';
 import Ground from './Ground';
-import { observer } from 'mobx-react-lite';
+import { observer } from 'mobx-threejs-store';
 import Tunnel from './tunnel';
 import Area from './area';
 import { useThree } from '@react-three/fiber';
