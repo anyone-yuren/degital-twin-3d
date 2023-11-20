@@ -32,7 +32,7 @@ export default defineConfig((config) => {
       },
     },
     // base: config.mode === 'development' ? '/' : `/${baseUrl}/`,
-    base: `/`,
+    base: `/degital-twin-3d/`,
     build: {
       outDir: `../../${baseUrl}`,
       rollupOptions: {
