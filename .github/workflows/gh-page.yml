@@ -24,6 +24,9 @@ jobs:
         with: # 插件携带参数
           node-version: '18' # 指定 node 版本
 
+      - name: Update npm
+        run: npm install -g npm
+
       # step 3. 安装依赖并打包
       - name: Install and Build 🔧
         run: |
