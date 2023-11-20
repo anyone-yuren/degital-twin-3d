@@ -1,0 +1,1 @@
+import{h as e,F as n,j as a}from"./.pnpm-dac787a2.js";import{T as r,C as t}from"./index-1020837e.js";function m(){return e(n,{children:[a(r,{children:"RoleManagement123"}),a(t,{})]})}export{m as default};
