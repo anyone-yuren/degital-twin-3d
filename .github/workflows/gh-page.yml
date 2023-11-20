@@ -35,8 +35,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           pnpm config set registry https://registry.npmmirror.com
-          npm install
-          npm run build
+          pnpm build
 
       # step 4. 项目部署, 将打包后的产物合并到指定的分支上
       - name: Deploy 🚀 # 步骤名
