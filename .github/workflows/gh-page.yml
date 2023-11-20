@@ -27,6 +27,9 @@ jobs:
       # step 3. 安装依赖并打包
       - name: Install and Build 🔧
         run: |
+          npm install turbo@1.10.6 -g
+          npm install pnpm -g
+          pnpm config set registry https://registry.npmmirror.com
           npm install
           npm run build
 
