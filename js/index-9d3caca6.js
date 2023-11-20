@@ -1,1 +1,0 @@
-import{s as t}from"./index-1020837e.js";import{j as o}from"./.pnpm-dac787a2.js";const r=()=>o("div",{className:`absolute bottom-2 right-[280px] left-[280px] mx-4 h-40 ${t.panel}`,children:"Left"});export{r as default};
