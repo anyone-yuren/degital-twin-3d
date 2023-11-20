@@ -18,20 +18,22 @@ jobs:
       - name: Chekcout 🛎️ # 步骤名
         uses: actions/checkout@master # 使用插件 => https://github.com/actions/checkout
 
-      # step 2. 使用指定版本 node
-      - name: Use Node  📦 # 步骤名
-        uses: actions/setup-node@master # 使用插件 => https://github.com/actions/setup-node
-        with: # 插件携带参数
-          node-version: '18' # 指定 node 版本
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.4
 
-      - name: Update npm
-        run: npm install -g npm
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        shell: bash
+        run: pnpm install
 
       # step 3. 安装依赖并打包
       - name: Install and Build 🔧
         run: |
-          npm install turbo@1.10.6 -g
-          npm install pnpm -g
           pnpm config set registry https://registry.npmmirror.com
           npm install
           npm run build
