@@ -29,7 +29,7 @@ jobs:
 
       - name: Install dependencies
         shell: bash
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       # step 3. 安装依赖并打包
       - name: Install and Build 🔧
