@@ -18,7 +18,7 @@ function ConveyerBelt(props: IConveyerBelt) {
       FBXLoader,
       process.env.NODE_ENV == 'development'
         ? '/static/models/GTX.FBX'
-        : `${process.env.REACT_STATIC_PATH}/static/models/GTX.FBX`
+        : `/degital-twin-3d/static/models/GTX.FBX`
     );
     const belt = res.clone();
     belt.scale.set(0.08, 0.05, 0.08);

@@ -20,7 +20,7 @@ function ForkTruck(props: IFourWayCar) {
       FBXLoader,
       process.env.NODE_ENV == 'development'
         ? '/static/models/SE-1.FBX'
-        : `${process.env.REACT_STATIC_PATH}/static/models/SE-1.FBX`
+        : `/degital-twin-3d/static/models/SE-1.FBX`
     );
     res.scale.set(0.05, 0.05, 0.05);
     return res.clone();

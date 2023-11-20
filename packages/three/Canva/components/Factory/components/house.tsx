@@ -75,7 +75,7 @@ const House = (props: IHouse) => {
   const texture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/wall_pic5.jpg'
-      : `${process.env.REACT_STATIC_PATH}/static/wall_pic5.jpg`
+      : `/degital-twin-3d/static/wall_pic5.jpg`
   );
   console.log('env', process.env.NODE_ENV);
 
@@ -85,7 +85,7 @@ const House = (props: IHouse) => {
   const roofTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/wall_pic7.png'
-      : `${process.env.REACT_STATIC_PATH}/static/wall_pic7.png`
+      : `/degital-twin-3d/static/wall_pic7.png`
   );
   roofTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   roofTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
@@ -95,7 +95,7 @@ const House = (props: IHouse) => {
   const floorTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/floor_02.png'
-      : `${process.env.REACT_STATIC_PATH}/static/floor_02.png`
+      : `/degital-twin-3d/static/floor_02.png`
   );
   floorTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   floorTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
@@ -104,7 +104,7 @@ const House = (props: IHouse) => {
   const roadTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/road2.jpg'
-      : `${process.env.REACT_STATIC_PATH}/static/road2.jpg`
+      : `/degital-twin-3d/static/road2.jpg`
   );
   roadTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   roadTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
@@ -113,7 +113,7 @@ const House = (props: IHouse) => {
   const grassTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/grass.jpg'
-      : `${process.env.REACT_STATIC_PATH}/static/grass.jpg`
+      : `/degital-twin-3d/static/grass.jpg`
   );
   grassTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   grassTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
@@ -122,7 +122,7 @@ const House = (props: IHouse) => {
   const surfaceTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/surface.jpg'
-      : `${process.env.REACT_STATIC_PATH}/static/surface.png`
+      : `/degital-twin-3d/static/surface.png`
   );
   surfaceTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   surfaceTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
@@ -131,7 +131,7 @@ const House = (props: IHouse) => {
   const crossTexture = new THREE.TextureLoader().load(
     process.env.NODE_ENV == 'development'
       ? '/static/cross.png'
-      : `${process.env.REACT_STATIC_PATH}/static/cross.png`
+      : `/degital-twin-3d/static/cross.png`
   );
   crossTexture.wrapS = THREE.RepeatWrapping; // 水平方向重复
   crossTexture.wrapT = THREE.RepeatWrapping; // 垂直方向重复
