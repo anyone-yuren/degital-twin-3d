@@ -42,4 +42,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.2 # 使用插件 => https://github.com/JamesIves/github-pages-deploy-action
         with:
           BRANCH: gh-pages # 部署分支
-          FOLDER: digtal-dist # 打包, 静态资源输出的目录
+          FOLDER: digital-dist # 打包, 静态资源输出的目录
