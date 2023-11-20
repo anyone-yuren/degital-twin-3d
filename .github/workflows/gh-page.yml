@@ -22,7 +22,7 @@ jobs:
       - name: Use Node  📦 # 步骤名
         uses: actions/setup-node@master # 使用插件 => https://github.com/actions/setup-node
         with: # 插件携带参数
-          node-version: '16' # 指定 node 版本
+          node-version: '18' # 指定 node 版本
 
       # step 3. 安装依赖并打包
       - name: Install and Build 🔧
