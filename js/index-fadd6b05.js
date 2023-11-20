@@ -1,0 +1,1 @@
+import{h as e,F as n,j as a}from"./.pnpm-5817c252.js";import{T as r,C as t}from"./index-6aab1219.js";function m(){return e(n,{children:[a(r,{children:"RoleManagement123"}),a(t,{})]})}export{m as default};
