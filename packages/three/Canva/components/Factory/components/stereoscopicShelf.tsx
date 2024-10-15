@@ -101,16 +101,16 @@ function StereoscopicShelf(props: IStereoscopicShelf) {
           const topPos = new Vector3(
             0,
             shelfBottomHeight +
-            layerIndex * (locationSize.y + shelfRackDiameter) +
-            shelfTrackBottomDiameter +
-            shelfTrackTopDiameter,
+              layerIndex * (locationSize.y + shelfRackDiameter) +
+              shelfTrackBottomDiameter +
+              shelfTrackTopDiameter,
             posZ
           );
           const bottomPos = new Vector3(
             0,
             shelfBottomHeight +
-            layerIndex * (locationSize.y + shelfRackDiameter) +
-            shelfTrackBottomDiameter,
+              layerIndex * (locationSize.y + shelfRackDiameter) +
+              shelfTrackBottomDiameter,
             posZ
           );
           return (

@@ -67,6 +67,7 @@ const Floor = () => {
 
   return (
     <Plane
+      receiveShadow
       args={[width, depth]} // Set width and depth based on the coordinates
       // position={[0, 0, 0]}
       // position={[
@@ -100,6 +101,7 @@ export default function App() {
   return (
     <>
       <Canvas
+        shadows
         dpr={[1, 2]}
         orthographic
         scene={
@@ -108,14 +110,14 @@ export default function App() {
           }
         }
         camera={{
-          position: [30000, 50000, 50000],
-          zoom: 0.5,
+          position: [30000, 50000, 20000],
+          zoom: 0.8,
           fov: 45,
           far: 200000,
         }}
       >
-        <directionalLight color={0xffffff} intensity={3} position={[10, 10, 0]} />
-        <pointLight position={[1000, 100000, 1000]} />
+        <directionalLight color={0xffffff} intensity={3} position={[1, 1, 1]} castShadow />
+        <pointLight position={[1000, 10000, 1000]} castShadow />
         <Environment preset="night" />
         <OrbitControls
           makeDefault
@@ -128,7 +130,7 @@ export default function App() {
         <WarehouseMap />
         {/* <Sky /> */}
         {/* <Ground /> */}
-        <Floor />
+        {/* <Floor /> */}
         <Help />
       </Canvas>
     </>

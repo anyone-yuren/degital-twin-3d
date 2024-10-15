@@ -31,7 +31,7 @@ function Shelf(props: IShelf) {
   const material = new THREE.MeshPhongMaterial({ color: 'blue' });
 
   return (
-    <group {...groupProps}>
+    <group {...groupProps} castShadow>
       {/* 竖直方向支架 */}
       <mesh
         geometry={colShelfRackGeometry}
