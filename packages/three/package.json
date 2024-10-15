@@ -18,9 +18,10 @@
     "@react-three/fiber": "^8.13.0",
     "@react-three/postprocessing": "^2.14.8",
     "@react-three/rapier": "^1.0.1",
+    "@types/three": "^0.169.0",
+    "components": "workspace:*",
     "leva": "^0.9.34",
     "mobx-threejs-store": "workspace:^1.0.0",
-    "components": "workspace:*",
     "react": "^18.2.0",
     "three": "^0.153.0"
   },

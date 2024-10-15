@@ -1,62 +1,40 @@
-// 添加场景相机
 import { useThree, PerspectiveCameraProps } from '@react-three/fiber';
-import {
-  PerspectiveCamera,
-  CameraControls,
-  PresentationControls,
-  FlyControls,
-  OrbitControls,
-  FirstPersonControls,
-  MapControls,
-} from '@react-three/drei';
+import { PerspectiveCamera, CameraControls } from '@react-three/drei';
 import * as THREE from 'three';
-
-import PointerCtrl from './CtrlPointerLock';
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { observer, ThreeStoreContext } from 'mobx-threejs-store';
 
 const Camera = (props: any) => {
   const threeObj = useThree();
   const camera = threeObj.camera;
   const mobxStore = useContext(ThreeStoreContext);
-  const flyCtrl = () => {
-    return (
-      <group>
-        <FirstPersonControls
-          far={100000}
-          movementSpeed={100}
-          activeLook={false}
-          lookVertical={true}
-        ></FirstPersonControls>
-        {/* <OrbitControls /> */}
-        <MapControls zoomSpeed={0.1} />
-      </group>
-    );
+
+  const coordinates = {
+    UpRight: {
+      X: 82750,
+      Y: 19640,
+    },
+    DownLeft: {
+      X: -9000,
+      Y: -9000,
+    },
   };
 
-  const ctrl = () => {
-    return (
-      <group>
-        {/* 相机控制器 */}
-        {/* <PresentationControls /> */}
-        <CameraControls />
-        {/* <PointerCtrl /> */}
-      </group>
-    );
-  };
+  // Calculate the center point
+  const centerX = (coordinates.UpRight.X + coordinates.DownLeft.X) / 2;
+  const centerY = (coordinates.UpRight.Y + coordinates.DownLeft.Y) / 2;
+
+  // Set camera position above the center point
+  const cameraHeight = 1000; // Adjust this value as needed for height
+  camera.position.set(centerX, cameraHeight, centerY);
+  camera.lookAt(centerX, 0, centerY); // Look at the center point
+
   return (
     <>
-      {mobxStore.threeStore.cameraCtrls.choiceCtrls === '1' ? ctrl() : flyCtrl()}
-      <PerspectiveCamera
-        makeDefault
-        position={[-100, 200, 1000]}
-        fov={48}
-        near={1}
-        far={100000}
-        maxDistance={10}
-        {...props}
-      />
+      <CameraControls />
+      <PerspectiveCamera makeDefault fov={48} near={1} far={100000} {...props} />
     </>
   );
 };
+
 export default observer(Camera);

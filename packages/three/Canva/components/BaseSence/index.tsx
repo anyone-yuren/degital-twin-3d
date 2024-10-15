@@ -28,9 +28,9 @@ const BaseSence = () => {
       {/* 其他 */}
       {/* <Man /> */}
       {/* 建筑 */}
-      <Buildings />
+      {/* <Buildings /> */}
       {/* 树 */}
-      <TreeGroup />
+      {/* <TreeGroup /> */}
     </group>
   );
 };

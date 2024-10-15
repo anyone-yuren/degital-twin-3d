@@ -5,14 +5,16 @@
 
 import React from 'react';
 import House from './components/house';
+import Boundary from './components/boundary';
 
 import WarehouseMap from './components/WarehouseMap';
 
 const Factory = () => {
   return (
     <>
-      <House />
-      <WarehouseMap />
+      {/* <House /> */}
+      <Boundary />
+      {/* <WarehouseMap /> */}
     </>
   );
 };

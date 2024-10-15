@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import styles from './style.module.scss';
 export default function Card(props: {
@@ -6,7 +6,7 @@ export default function Card(props: {
   children: React.ReactNode;
   right?: React.ReactNode;
 }) {
-  const cardRef = useRef(null);
+  const cardRef = useRef<HTMLDivElement>(null);
   const config = {
     mass: 1,
     tension: 170,
@@ -23,8 +23,8 @@ export default function Card(props: {
       xys: [0, 0, 1],
     });
 
-  const handleMouseMove = (e) => {
-    const rect = cardRef.current.getBoundingClientRect();
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = cardRef.current?.getBoundingClientRect();
     api.start({
       xys: calc(e.clientX, e.clientY, rect),
     });
@@ -32,7 +32,6 @@ export default function Card(props: {
 
   return (
     <div className="w-full mt-2" ref={cardRef}>
-      {/* <BorderBox8 dur={12}> */}
       <div>
         <animated.div
           className={`border  border-solid ${styles['animate-border-glow']} ${styles.card} `}
@@ -46,15 +45,15 @@ export default function Card(props: {
           {props.children}
         </animated.div>
       </div>
-      {/* </BorderBox8> */}
     </div>
   );
 }
 
-const calc = (x, y, rect) => [
-  -(y - rect.top - rect.height / 2) / 50,
-  (x - rect.left - rect.width / 2) / 50,
+const calc = (x: number, y: number, rect: DOMRect | undefined) => [
+  -(y - rect!.top - rect!.height / 2) / 50,
+  (x - rect!.left - rect!.width / 2) / 50,
   1.01,
 ];
 
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+const trans = (x: number, y: number, s: number) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;

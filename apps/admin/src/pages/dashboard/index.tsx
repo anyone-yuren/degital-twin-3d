@@ -16,8 +16,8 @@ const Workplace: FC = () => {
     <ThreeMobx>
       <Suspense fallback={<Spin size="small" />}>
         <Canvas />
-        <Left />
-        <Right />
+        {/* <Left />
+        <Right /> */}
         {/* <Bottom /> */}
       </Suspense>
     </ThreeMobx>

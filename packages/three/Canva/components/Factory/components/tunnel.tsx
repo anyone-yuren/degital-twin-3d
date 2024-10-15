@@ -20,9 +20,9 @@ const Tunnel: React.FC<ITunnelProps> = ({ x, y, width, height, tunnelNumber }) =
       <mesh position={innerPosition} rotation={[-Math.PI / 2, 0, 0]}>
         <planeGeometry args={[width, height]}></planeGeometry>
         <MeshReflectorMaterial
-          blur={[400, 100]}
+          blur={[0, 0]}
           resolution={1024}
-          mixBlur={1}
+          mixBlur={0}
           mixStrength={5}
           depthScale={1}
           minDepthThreshold={1}

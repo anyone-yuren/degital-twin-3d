@@ -28,10 +28,10 @@ const Lights = () => {
   return (
     <>
       {/* 首先添加个环境光,AmbientLight,影响整个场景的光源 */}
-      <ambientLight intensity={0.5} />
+      {/* <ambientLight intensity={5} /> */}
       {/* 模拟远处类似太阳的光源 */}
       <directionalLight color={0xffffff} intensity={3} position={[10, 10, 0]} />
-      <MovingSpot color="#fff" position={[3, 2000, 2]} />
+      {/* <MovingSpot color="#fff" position={[3, 2000, 2]} /> */}
     </>
   );
 };
